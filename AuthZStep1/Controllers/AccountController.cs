@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AuthZ.Controllers
 {
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         public async Task<IActionResult> Login(string returnUrl = null)
